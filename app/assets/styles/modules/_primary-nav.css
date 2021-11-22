@@ -5,9 +5,16 @@
     padding-top: 0;
   }
 
+  &--pull-right {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
+    @mixin clearfix;
   }
 
   li {
@@ -16,6 +23,8 @@
     padding-right: 7px;
     @mixin atMedium {
       padding-right: 20px;
+      float: left;
+      display: block;
     }
   }
 
@@ -27,13 +36,13 @@
   }
 
   a {
-    color: #fff;
+    color: #FFF;
     font-weight: 300;
     text-decoration: none;
     display: block;
     padding: 5px 8px;
-    font-size: 0.8rem;
-    background-color: rgba(47, 85, 114, 0.5);
+    font-size: .8rem;
+    background-color: rgba(47, 85, 114, .5);
 
     @mixin atMedium {
       font-size: 1rem;
